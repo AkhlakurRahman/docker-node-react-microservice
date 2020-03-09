@@ -1,0 +1,5 @@
+listings-service/node_modules
+users-service/node_modules
+
+.DS_Store
+.env
