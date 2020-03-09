@@ -1,6 +1,9 @@
+import { Listing } from '#root/db/models';
+
 const setupRoutes = app => {
-  app.get('/listings', (req, res, next) => {
-    return res.json({ message: 'Yes, working' });
+  app.get('/listings', async (req, res, next) => {
+    const listings = await Listing.findAll();
+    return res.json(listings);
   });
 };
 
