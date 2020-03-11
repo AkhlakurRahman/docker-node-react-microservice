@@ -11,4 +11,9 @@ export default class UsersService {
 
     return body.data;
   }
+
+  static async getAllUsers() {
+    const body = await axios.get(`${USERS_SERVICE_URI}/users`);
+    return body.data;
+  }
 }

@@ -18,6 +18,7 @@ const typeDefs = gql`
 
   type Query {
     listings: [Listing!]!
+    users: [User!]!
   }
 `;
 
