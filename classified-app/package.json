@@ -1,0 +1,21 @@
+{
+  "name": "classified-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "watch": "parcel --port=7001 src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0",
+    "react-is": ">= 16.8.0",
+    "styled-components": "^5.0.1"
+  },
+  "alias": {
+    "#root": "./src"
+  }
+}
