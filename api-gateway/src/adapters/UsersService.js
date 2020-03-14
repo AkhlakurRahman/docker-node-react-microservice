@@ -12,6 +12,15 @@ export default class UsersService {
     return body.data;
   }
 
+  static async createUserSession({ email, password }) {
+    const body = await axios.post(`${USERS_SERVICE_URI}/sessions`, {
+      email,
+      password
+    });
+
+    return body.data;
+  }
+
   static async getAllUsers() {
     const body = await axios.get(`${USERS_SERVICE_URI}/users`);
     return body.data;
