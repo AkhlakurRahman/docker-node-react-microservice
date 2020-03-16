@@ -12,6 +12,12 @@ export default class UsersService {
     return body.data;
   }
 
+  static async fetchUser({ userId }) {
+    const body = await axios.get(`${USERS_SERVICE_URI}/users/${userId}`);
+
+    return body.data;
+  }
+
   static async createUserSession({ email, password }) {
     const body = await axios.post(`${USERS_SERVICE_URI}/sessions`, {
       email,
@@ -21,8 +27,9 @@ export default class UsersService {
     return body.data;
   }
 
-  static async getAllUsers() {
-    const body = await axios.get(`${USERS_SERVICE_URI}/users`);
+  static async fetchUserSession({ sessionId }) {
+    const body = await axios.get(`${USERS_SERVICE_URI}/sessions/${sessionId}`);
+
     return body.data;
   }
 }
