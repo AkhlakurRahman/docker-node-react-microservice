@@ -14,7 +14,7 @@
     "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.8.7",
     "apollo-server": "^2.11.0",
-    "apollo-server-express": "^2.11.0",
+    "apollo-server-express": "^2.14.2",
     "axios": "^0.19.2",
     "babel-plugin-module-resolver": "^4.0.0",
     "cookie-parser": "^1.4.4",
